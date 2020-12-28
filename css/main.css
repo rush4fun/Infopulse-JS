@@ -1,0 +1,259 @@
+/* --------------------------------------------------- VARIABLES */
+:root {
+    --violet-text: linear-gradient(180deg, #C35EBB 0%, #7364F0 100%);
+    --violet-btn: linear-gradient(92.05deg, #C35EBB 0%, #7364F0 100%);
+    --gray-text: #7A7A84;
+}
+/* --------------------------------------------------- FONTS */
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-XLight.woff2') format('woff2'),
+        url('css/fonts/Gotham-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-MediumItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Bold.woff2') format('woff2'),
+        url('css/fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Light.woff2') format('woff2'),
+        url('css/fonts/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Light.woff2') format('woff2'),
+        url('css/fonts/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Black.woff2') format('woff2'),
+        url('css/fonts/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Book.woff2') format('woff2'),
+        url('css/fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-BookItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-XLightItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-XLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-UltraItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-UltraItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Bold.woff2') format('woff2'),
+        url('css/fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Thin.woff2') format('woff2'),
+        url('css/fonts/Gotham-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-ThinItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Medium.woff2') format('woff2'),
+        url('css/fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-BoldItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-BookItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-BookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-Medium.woff2') format('woff2'),
+        url('css/fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('css/fonts/Gotham-LightItalic.woff2') format('woff2'),
+        url('css/fonts/Gotham-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* --------------------------------------------------- RESET CSS */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* --------------------------------------------------- COMMON STYLES */
+body * {
+    font-family: 'Gotham', sans-serif;
+    font-size: 10px;
+    color: #fff;
+}
+.wrapper {
+    max-width: 1147px;
+}
+.text {
+    font-size: 1.6rem;
+}
+h1 {
+    font-size: 7.2rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+.btn {
+    pad: 1.5rem 8rem;
+    background: var(--violet-btn);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
