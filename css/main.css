@@ -176,8 +176,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -188,8 +188,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -208,8 +208,8 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -217,7 +217,9 @@ ol[class] {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
+a {
+    text-decoration: none;
+}
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
@@ -231,13 +233,30 @@ select {
   font: inherit;
 }
 /* --------------------------------------------------- COMMON STYLES */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+header {
+    order: 1;
+}
+main {
+    order: 2;
+    flex-grow: 1;
+}
+footer {
+    order: 3;
+}
 body * {
     font-family: 'Gotham', sans-serif;
     font-size: 10px;
     color: #fff;
+    line-height: 1.4;
 }
 .wrapper {
     max-width: 1147px;
+    margin: 0 auto;
 }
 .text {
     font-size: 1.6rem;
@@ -251,9 +270,25 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
+h4 {
+    font-size: 1.8rem;
+}
 .btn {
     pad: 1.5rem 8rem;
     background: var(--violet-btn);
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
+}
+/* --------------------------------------------------- HEADER */
+.header {
+    margin-top: 1rem;
+    background-color: #000;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
 }
