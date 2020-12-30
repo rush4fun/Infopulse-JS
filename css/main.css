@@ -316,6 +316,10 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
 }
+.menu__wrapper {
+    display: flex;
+    align-items: center;
+}
 .menu__wrapper, .login__wrapper {
     max-width: 40%;
     flex-basis: 40%;
@@ -363,9 +367,18 @@ a:hover {
 .login__inner {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 .login__item {
+    display: flex;
     padding: 0 1.5rem;
+}
+.login__item a {
+    display: flex;
+    align-items: center;
+}
+.login__item--circle {
+    position: relative;
 }
 .login__item--circle img {
     width: 36px;
@@ -373,27 +386,28 @@ a:hover {
     border: 0.5px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     padding: 5px;
-    position: relative;
+    transition: 0.3s;
 }
-.login__item--circle img:hover::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    border-image: linear-gradient(92.05deg, #C35EBB 0%, #7364F0 100%);
-    border-image-slice: 1;
-    border-radius: 50%;
+.login__subitem:hover img, .login__item--circle:hover .main-lang {
+    border-color: #C35EBB;
+    transition: 0.3s;
+}
+.login__item--circle:hover .lang__submenu {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
 }
 .lang__submenu {
-    padding: 1.5rem;
-    margin-top: 1rem;
+    position: absolute;
+    width: 12rem;
+    padding: 1.5rem 1rem;
+    top: 5rem;
+    left: 0;
     background: rgba(0, 0, 0, 0.71);
     border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
 }
 .lang__submenu p {
     font-family: Gotham Pro;
@@ -412,4 +426,33 @@ a:hover {
 }
 .login__subitem img {
     margin-right: 1rem;
+}
+.login__registration img {
+    width: 21px;
+    height: 21px;
+    margin-left: 1rem;
+    filter: invert(0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.login__registration:hover img {
+    filter: inherit;
+    transition: 0.3s;
+}
+.login__enter a {
+    padding: 1rem 2.5rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 36px;
+}
+.login__enter:hover a {
+    border-color: #C35EBB;
+    transition: 0.3s;
+}
+.login__enter img {
+    width: 14px;
+    height: 21px;
+    margin-left: 1rem;
+}
+.login__enter:hover img {
+    filter: invert(0.5);
 }
