@@ -1,167 +1,157 @@
 /* --------------------------------------------------- VARIABLES */
 :root {
-    --violet-text: linear-gradient(180deg, #C35EBB 0%, #7364F0 100%);
-    --violet-btn: linear-gradient(92.05deg, #C35EBB 0%, #7364F0 100%);
-    --gray-text: #7A7A84;
+    --violet-text: linear-gradient(180deg, #c35ebb 0%, #7364f0 100%);
+    --violet-btn: linear-gradient(92.05deg, #c35ebb 0%, #7364f0 100%);
+    --gray-text: #7a7a84;
 }
 /* --------------------------------------------------- FONTS */
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-XLight.woff2') format('woff2'),
-        url('css/fonts/Gotham-XLight.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-XLight.woff2") format("woff2"), url("css/fonts/Gotham-XLight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-MediumItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-MediumItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-MediumItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-MediumItalic.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Bold.woff2') format('woff2'),
-        url('css/fonts/Gotham-Bold.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Bold.woff2") format("woff2"), url("css/fonts/Gotham-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Light.woff2') format('woff2'),
-        url('css/fonts/Gotham-Light.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Light.woff2") format("woff2"), url("css/fonts/Gotham-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Light.woff2') format('woff2'),
-        url('css/fonts/Gotham-Light.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Light.woff2") format("woff2"), url("css/fonts/Gotham-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Black.woff2') format('woff2'),
-        url('css/fonts/Gotham-Black.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Black.woff2") format("woff2"), url("css/fonts/Gotham-Black.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Book.woff2') format('woff2'),
-        url('css/fonts/Gotham-Book.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Book.woff2") format("woff2"), url("css/fonts/Gotham-Book.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-BookItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-BookItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-BookItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-BookItalic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-XLightItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-XLightItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-XLightItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-XLightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-UltraItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-UltraItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-UltraItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-UltraItalic.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Bold.woff2') format('woff2'),
-        url('css/fonts/Gotham-Bold.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Bold.woff2") format("woff2"), url("css/fonts/Gotham-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Thin.woff2') format('woff2'),
-        url('css/fonts/Gotham-Thin.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Thin.woff2") format("woff2"), url("css/fonts/Gotham-Thin.woff") format("woff");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-ThinItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-ThinItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-ThinItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-ThinItalic.woff") format("woff");
     font-weight: 100;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Medium.woff2') format('woff2'),
-        url('css/fonts/Gotham-Medium.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Medium.woff2") format("woff2"), url("css/fonts/Gotham-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-BoldItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-BoldItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-BoldItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-BoldItalic.woff") format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-BookItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-BookItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-BookItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-BookItalic.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-Medium.woff2') format('woff2'),
-        url('css/fonts/Gotham-Medium.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-Medium.woff2") format("woff2"), url("css/fonts/Gotham-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src: url('css/fonts/Gotham-LightItalic.woff2') format('woff2'),
-        url('css/fonts/Gotham-LightItalic.woff') format('woff');
+    font-family: "Gotham";
+    src: url("css/fonts/Gotham-LightItalic.woff2") format("woff2"),
+        url("css/fonts/Gotham-LightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -172,13 +162,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
 ul,
 ol {
-  padding: 0;
+    padding: 0;
 }
 
 /* Убираем внешние отступы */
@@ -196,33 +186,34 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 a {
     text-decoration: none;
+    transition: 0.3s;
 }
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -230,7 +221,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 /* --------------------------------------------------- COMMON STYLES */
 html {
@@ -252,7 +243,7 @@ footer {
     order: 3;
 }
 body * {
-    font-family: 'Gotham', sans-serif;
+    font-family: "Gotham", sans-serif;
     color: #fff;
     line-height: 1.4;
     z-index: 2;
@@ -260,9 +251,6 @@ body * {
 .wrapper {
     max-width: 1147px;
     margin: 0 auto;
-}
-.text {
-    font-size: 1.6rem;
 }
 h1 {
     font-size: 7.2rem;
@@ -277,15 +265,26 @@ h4 {
     font-size: 1.8rem;
 }
 .btn {
-    pad: 1.5rem 8rem;
+    padding: 1.5rem 8rem;
     background: var(--violet-btn);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
+    outline: 0.3rem solid transparent;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: transparent;
+    outline: 0.3rem solid #7364f0;
+    color: #fff;
+    transition: 0.3s;
+}
+.btn:active {
+    color: var(--gray-text);
+    transition: 0.3s;
 }
 a:hover {
-    background: linear-gradient(92.05deg, #C35EBB 0%, #7364F0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #c35ebb;
+    transition: 0.3s;
 }
 /* --------------------------------------------------- HEADER */
 .header {
@@ -293,14 +292,19 @@ a:hover {
     background-color: #000;
     background-image: url(../img/header.jpg);
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 2rem;
 }
 .header__top {
     display: flex;
     position: relative;
     justify-content: space-between;
     flex-flow: row wrap;
-    padding: 3rem 1rem;
 }
 .header::after {
     content: "";
@@ -309,20 +313,24 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(360deg, #1D1D26 0%, #1D1D26 0.01%, #201D26 0.02%, rgba(29, 29, 38, 0.38) 100%);
-    z-index: 1;
+    background: linear-gradient(360deg, #1d1d26 0%, #1d1d26 0.01%, #201d26 0.02%, rgba(29, 29, 38, 0.38) 100%);
+    z-index: -1;
 }
-.menu a, .meun p, .login__wrapper a, .login__wrapper p {
-    font-family: 'Roboto', sans-serif;
+.menu a,
+.meun p,
+.login__wrapper a,
+.login__wrapper p {
+    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
 }
 .menu__wrapper {
     display: flex;
     align-items: center;
 }
-.menu__wrapper, .login__wrapper {
-    max-width: 40%;
-    flex-basis: 40%;
+.menu__wrapper,
+.login__wrapper {
+    max-width: 43%;
+    flex-basis: 43%;
 }
 .menu {
     display: flex;
@@ -342,7 +350,7 @@ a:hover {
     left: 0;
     width: 0%;
     height: 1px;
-    background: linear-gradient(180deg, #C35EBB 0%, #7364F0 100%);
+    background: linear-gradient(180deg, #c35ebb 0%, #7364f0 100%);
     transition: 0.5s;
 }
 .menu__item a:hover::after {
@@ -350,24 +358,20 @@ a:hover {
     transition: 0.5s;
 }
 .logo {
-    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
-    max-width: 20%;
-    flex-basis: 20%;
-    background: linear-gradient(92.05deg, #C35EBB 0%, #7364F0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0.85;
-    transition: 0.3s;
-}
-.logo:hover {
-    opacity: 1;
-    transition: 0.3s;
+    max-width: 14%;
+    flex-basis: 14%;
+    color: #c35ebb;
+    background-color: #000;
+    border-radius: 0px 0px 30px 30px;
 }
 .login__inner {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    justify-content: flex-end;
 }
 .login__item {
     display: flex;
@@ -388,8 +392,9 @@ a:hover {
     padding: 5px;
     transition: 0.3s;
 }
-.login__subitem:hover img, .login__item--circle:hover .main-lang {
-    border-color: #C35EBB;
+.login__subitem:hover img,
+.login__item--circle:hover .main-lang {
+    border-color: #c35ebb;
     transition: 0.3s;
 }
 .login__item--circle:hover .lang__submenu {
@@ -413,7 +418,7 @@ a:hover {
     font-family: Gotham Pro;
     font-size: 12px;
     margin-bottom: 2rem;
-    color: #B3B3B4;
+    color: #b3b3b4;
 }
 .login__subitem {
     margin-bottom: 1rem;
@@ -422,7 +427,7 @@ a:hover {
     display: flex;
     align-items: center;
     font-weight: 500;
-    color: #B3B3B4;
+    color: #b3b3b4;
 }
 .login__subitem img {
     margin-right: 1rem;
@@ -445,7 +450,7 @@ a:hover {
     border-radius: 36px;
 }
 .login__enter:hover a {
-    border-color: #C35EBB;
+    border-color: #c35ebb;
     transition: 0.3s;
 }
 .login__enter img {
@@ -455,4 +460,57 @@ a:hover {
 }
 .login__enter:hover img {
     filter: invert(0.5);
+}
+.header__main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-basis: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.header__main p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+.advantages__block {
+    position: relative;
+}
+.advantages__list {
+    display: flex;
+    flex-direction: row wrap;
+    padding-bottom: 5.5rem;
+}
+.advantages__list:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    width: 100%;
+    background-color: #c4c4c4;
+}
+.advantages__item {
+    display: flex;
+    flex-flow: row wrap;
+    width: 25%;
+    flex-basis: 25%;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.advantages__item h4 {
+    flex-basis: 70%;
+}
+.advantages__item p {
+    flex-basis: 100%;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+.advantages__item img {
+    width: 45px;
+    height: 45px;
+    margin-right: 2.5rem;
 }
