@@ -528,6 +528,7 @@ a:hover {
 }
 .advantages__item img {
     height: 45px;
+    object-fit: cover;
     margin-right: 2.5rem;
 }
 /* --------------------------------------------------- MAIN */
@@ -562,6 +563,7 @@ a:hover {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
 }
 .main__slider .slider__inner img {
+    width: 50%;
     object-fit: cover;
     background-color: #252530;
 }
@@ -609,7 +611,6 @@ a:hover {
     position: relative;
     width: 25%;
     flex-basis: 25%;
-    padding: 0 3rem;
     text-align: center;
 }
 .indicator__block:after {
@@ -647,4 +648,53 @@ a:hover {
 }
 .start {
     text-align: center;
+}
+.start p {
+    color: #7a7a84;
+}
+.start__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.steps {
+    position: relative;
+    width: 33.333%;
+    flex-basis: 33.333%;
+    padding-right: 6.5rem;
+    transition: 0.3s;
+}
+.steps:hover {
+    transform: translateY(-10%);
+    transition: 0.3s;
+}
+.steps:hover .step__block {
+    border: 1px solid #c35ebb;
+}
+.steps span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #c35ebb 0%, #7364f0 100%);
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+.step__block {
+    height: 100%;
+    background: #252530;
+    padding: 3rem;
+}
+.step__block img {
+    height: 150px;
+    object-fit: cover;
+}
+.step__block h3,
+.step__block img {
+    margin-bottom: 2rem;
 }
