@@ -267,6 +267,7 @@ p {
     font-size: 1.6rem;
 }
 .btn {
+    display: inline-block;
     padding: 1.5rem 8rem;
     background: var(--violet-btn);
     font-family: "Roboto", sans-serif;
@@ -498,8 +499,9 @@ a:hover {
 }
 .advantages__list {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     padding-bottom: 5.5rem;
+    justify-content: space-between;
 }
 .advantages__list:after {
     content: "";
@@ -513,13 +515,17 @@ a:hover {
 .advantages__item {
     display: flex;
     flex-flow: row wrap;
-    width: 25%;
-    flex-basis: 25%;
+    width: 23%;
+    flex-basis: 23%;
     align-items: center;
-    padding: 0 1.5rem;
 }
 .advantages__item h4 {
     flex-basis: 70%;
+    transition: 0.3s;
+}
+.advantages__item h4:hover {
+    color: #c35ebb;
+    transition: 0.3s;
 }
 .advantages__item p {
     flex-basis: 100%;
@@ -533,7 +539,7 @@ a:hover {
 }
 /* --------------------------------------------------- MAIN */
 .main {
-    padding: 12rem 0;
+    padding: 12rem 1rem;
     background-color: #1d1d26;
 }
 .main__slider .slider {
@@ -600,7 +606,7 @@ a:hover {
     margin-left: 2rem;
 }
 .indicators {
-    padding: 10rem 0;
+    padding: 10rem 1rem;
 }
 .indicators__inner {
     display: flex;
@@ -655,14 +661,13 @@ a:hover {
 .start__inner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    padding: 6rem 0;
+    justify-content: space-between;
+    padding: 6rem 1rem;
 }
 .steps {
     position: relative;
-    width: 33.333%;
-    flex-basis: 33.333%;
-    padding-right: 6.5rem;
+    width: 30%;
+    flex-basis: 30%;
     transition: 0.3s;
 }
 .steps:hover {
@@ -697,4 +702,17 @@ a:hover {
 .step__block h3,
 .step__block img {
     margin-bottom: 2rem;
+}
+.open-account {
+    padding: 5rem 1rem;
+    background-color: #252530;
+    text-align: center;
+}
+.open-account h2 {
+    margin-bottom: 1rem;
+}
+.open-account p {
+    opacity: 0.8;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
 }
