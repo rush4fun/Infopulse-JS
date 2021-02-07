@@ -716,3 +716,199 @@ a:hover {
     font-size: 1.8rem;
     margin-bottom: 3rem;
 }
+.calculator__inner {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10rem 1rem;
+}
+.calculator__main,
+.calculator__info {
+    display: flex;
+    flex-basis: 50%;
+    width: 50%;
+}
+.calculator__main {
+    display: flex;
+    flex-direction: column;
+    padding: 5.5rem;
+    background-color: #252530;
+}
+.calculator__main h3 {
+    margin-bottom: 4rem;
+}
+.calculator__main p {
+    margin-bottom: 1rem;
+}
+.calculator__main span {
+    color: #7a7a84;
+}
+.calculator__range {
+    margin-bottom: 3rem;
+}
+.calculator__range p {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.calculator__range span {
+    font-size: 1.8rem;
+    color: #7a7a84;
+    font-weight: 100;
+    margin-left: 1rem;
+}
+.calculator__num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.calculator__num li {
+    color: #4a4a4a;
+}
+.calculator__range input {
+    width: 100%;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type="range"]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+/* STYLING CURSOR */
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    border-radius: 50%;
+}
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* STYLING LINE */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #7364f0;
+    border-radius: 29px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #c35ebb;
+}
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #7364f0;
+    border-radius: 29px;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #7364f0;
+    border-radius: 29px;
+}
+input[type="range"]::-ms-fill-lower {
+    background: #c35ebb;
+}
+input[type="range"]:focus::-ms-fill-lower {
+    background: #c35ebb;
+}
+input[type="range"]::-ms-fill-upper {
+    background: #c35ebb;
+}
+input[type="range"]:focus::-ms-fill-upper {
+    background: #c35ebb;
+}
+.calculator__result {
+    margin-top: 1rem;
+    padding-top: 5rem;
+    border-top: 0.5px solid #7a7a84;
+}
+.calculator__result p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7a7a84;
+    font-size: 1.8rem;
+}
+.calculator__result span {
+    font-size: 3.6rem;
+    color: #fff;
+    font-weight: 700;
+}
+.calculator__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 8.5rem;
+}
+.calculator__info h2 {
+    margin-bottom: 2rem;
+}
+.calculator__info p {
+    color: #7a7a84;
+    margin-bottom: 4.5rem;
+}
+.our-service h2 {
+    margin-bottom: 1rem;
+}
+.our-service p {
+    color: #7a7a84;
+    margin-bottom: 6rem;
+}
+.our-service__inner {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+.our-service video {
+    position: relative;
+    width: 57rem;
+    height: 32rem;
+    background-color: #000;
+}
+.our-service video:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 11rem;
+    width: 11rem;
+    background: url("../img/icons/play.png") no-repeat;
+}
