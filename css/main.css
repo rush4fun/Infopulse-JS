@@ -895,20 +895,67 @@ input[type="range"]:focus::-ms-fill-upper {
     text-align: center;
     padding-bottom: 10rem;
 }
-.our-service video {
+.our-service__video {
     position: relative;
     width: 57rem;
     height: 32rem;
     background-color: #000;
 }
-.our-service video:after {
+.our-service__video:after {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     height: 11rem;
     width: 11rem;
-    background: url("../img/icons/play.png") no-repeat;
+    background: url("../img/icons/video-play.png") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.our-service__video:hover::after {
+    transform: scale(1.2) translateX(-40%);
+    transition: 0.3s;
+}
+.how-it-works__inner {
+    display: flex;
+    flex-flow: row wrap;
+}
+.how-it-works__info,
+.how-it-works__calculator {
+    width: 50%;
+    flex-basis: 50%;
+}
+.how-it-works__info h2 {
+    margin-bottom: 1rem;
+}
+.how-it-works__info p {
+    margin-bottom: 5rem;
+    color: #7a7a84;
+}
+.how-it-works__info a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+}
+.how-it-works__info a::before {
+    content: url("../img/icons/play.png");
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.how-it-works__info a:hover::before {
+    transform: scale(1.2) rotate(360deg);
+    transition: 1s;
+}
+.how-it-works__heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
 }
