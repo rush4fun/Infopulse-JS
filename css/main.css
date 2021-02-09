@@ -929,6 +929,9 @@ input[type="range"]:focus::-ms-fill-upper {
     width: 50%;
     flex-basis: 50%;
 }
+.how-it-works__info {
+    padding: 5rem 2.5rem;
+}
 .how-it-works__info h2 {
     margin-bottom: 1rem;
 }
@@ -958,4 +961,55 @@ input[type="range"]:focus::-ms-fill-upper {
 .how-it-works__heading {
     text-transform: uppercase;
     font-size: 1.8rem;
+}
+.crypto,
+.crypto__block {
+    display: flex;
+    flex-flow: row wrap;
+}
+.crypto__block {
+    align-items: center;
+    margin-right: 3.5rem;
+}
+.crypto__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    background: #252530;
+}
+.crypto__block p {
+    padding: 1.77rem 3.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0;
+    background: rgba(37, 37, 48, 0.5);
+}
+.how-it-works__calculator {
+    padding: 5rem 6rem;
+    padding-right: 10rem;
+    background: url("../img/change-bg.png") no-repeat;
+    background-size: cover;
+}
+.how-it-works__calculator input[type="radio"] {
+    display: none;
+}
+.selector__val {
+    padding: 2rem 5rem;
+    color: #7364f0;
+    border: 1px solid #7364f0;
+    font-size: 2.4rem;
+}
+.selector__val:hover {
+    color: #c35ebb;
+    border: 1px solid #c35ebb;
+    cursor: pointer;
+}
+#litecoin:checked + .selector__val {
+    background: var(--violet-btn);
+    color: #252530;
+}
+#litecoin:checked + .selector__val:hover {
+    background: linear-gradient(92.05deg, #7364f0 0%, #c35ebb 100%);
 }

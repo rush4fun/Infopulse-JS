@@ -200,18 +200,42 @@
                         <a href="#">ПОСМОТРИТЕ КАК ЭТО РАБОТАЕТ</a>
                         <p class="how-it-works__heading">Текущий курс</p>
                         <div class="crypto">
-                            <div>
-                                <img src="img/icons/litecoin.png" alt="Litecoin">
+                            <div class="crypto__block">
+                                <div class="crypto__img-wrapper">
+                                    <img src="img/icons/litecoin.png" alt="Litecoin">
+                                </div>
                                 <p>$15,231</p>
                             </div>
-                            <div>
-                                <img src="img/icons/bitcoin.png" alt="Bitcoin">
+                            <div class="crypto__block">
+                                <div class="crypto__img-wrapper">
+                                    <img src="img/icons/bitcoin.png" alt="Bitcoin">
+                                </div>
                                 <p>$1,234</p>
                             </div>
                         </div>
                     </div>
                     <div class="how-it-works__calculator">
-
+                        <div class="selector">
+                            <input type="radio" name="litecoin" id="litecoin">
+                            <label for="litecoin" class="selector__val">
+                                Litecoin
+                            </label>
+                            <input type="radio" name="bitcoin" id="bitcoin">
+                            <label for="bitcoin" class="selector__val">
+                                Bitcoin
+                            </label>
+                        </div>
+                        <div class="result">
+                            <div class="result__block result__block--right">
+                                <p>Отдаёте</p>
+                                <p>USD<span>325.48</span></p>
+                            </div>
+                            <div class="result__block result__block--left">
+                                <p>ПОЛУЧАЕТЕ</p>
+                                <p><span>400</span>BTC</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Сделать обмен</a>
                     </div>
                 </div>
             </div>
