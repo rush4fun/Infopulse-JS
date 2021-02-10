@@ -930,7 +930,7 @@ input[type="range"]:focus::-ms-fill-upper {
     flex-basis: 50%;
 }
 .how-it-works__info {
-    padding: 5rem 2.5rem;
+    padding: 5rem 3rem 5rem 2rem;
 }
 .how-it-works__info h2 {
     margin-bottom: 1rem;
@@ -987,16 +987,20 @@ input[type="range"]:focus::-ms-fill-upper {
     background: rgba(37, 37, 48, 0.5);
 }
 .how-it-works__calculator {
-    padding: 5rem 6rem;
-    padding-right: 10rem;
+    padding: 5rem;
+    padding-right: 7rem;
     background: url("../img/change-bg.png") no-repeat;
     background-size: cover;
+    text-align: center;
 }
 .how-it-works__calculator input[type="radio"] {
     display: none;
 }
+.how-it-works__selector {
+    margin-bottom: 4rem;
+}
 .selector__val {
-    padding: 2rem 5rem;
+    padding: 1.5rem 5rem;
     color: #7364f0;
     border: 1px solid #7364f0;
     font-size: 2.4rem;
@@ -1012,4 +1016,34 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 #litecoin:checked + .selector__val:hover {
     background: linear-gradient(92.05deg, #7364f0 0%, #c35ebb 100%);
+}
+#bitcoin:checked + .selector__val {
+    background: var(--violet-btn);
+    color: #252530;
+}
+#bitcoin:checked + .selector__val:hover {
+    background: linear-gradient(92.05deg, #7364f0 0%, #c35ebb 100%);
+}
+.how-it-works__result {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 6rem -6.5rem;
+}
+.result__block {
+    padding: 2rem 2.5rem;
+    background-color: #252530;
+}
+.result__block p {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #7a7a84;
+}
+.result__block span {
+    font-size: 5.6rem;
+    color: #bdbdbd;
+    font-weight: 700;
+}
+.result__block--right {
+    text-align: right;
+    box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.19);
 }
