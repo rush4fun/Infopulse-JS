@@ -1088,4 +1088,71 @@ input[type="range"]:focus::-ms-fill-upper {
     transform: scale(1.5);
 }
 .investing {
+    padding: 10rem 1rem;
+    text-align: center;
+}
+.investing p {
+    color: #7a7a84;
+    font-size: 2.4rem;
+}
+.investing__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 6rem 1rem;
+}
+.investing__block {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex-basis: 45%;
+    width: 45%;
+}
+.investing__media,
+.investing__info {
+    flex-basis: 50%;
+    width: 50%;
+    text-align: left;
+}
+.investing__media {
+    position: relative;
+}
+.investing__media img {
+    object-fit: cover;
+}
+.investing__media::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(29, 29, 38, 0.6);
+    z-index: 1;
+}
+.investing__media figcaption {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 1.8rem;
+    z-index: 3;
+    padding-left: 1.5rem;
+}
+.investing__media figcaption::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0.3rem;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #c35ebb 0%, #7364f0 100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+.investing__media figcaption:hover::before {
+    width: 112%;
+    transform: translateX(-10.5%);
+    transition: 0.3s;
 }
