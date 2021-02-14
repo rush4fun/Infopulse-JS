@@ -1107,6 +1107,7 @@ input[type="range"]:focus::-ms-fill-upper {
     align-items: center;
     flex-basis: 45%;
     width: 45%;
+    margin-bottom: 5rem;
 }
 .investing__media,
 .investing__info {
@@ -1151,8 +1152,37 @@ input[type="range"]:focus::-ms-fill-upper {
     transition: 0.3s;
     z-index: -1;
 }
-.investing__media figcaption:hover::before {
+.investing__block:hover > .investing__media figcaption::before {
     width: 112%;
     transform: translateX(-10.5%);
     transition: 0.3s;
+}
+.investing__block:hover > .investing__info p {
+    color: #fff;
+    transition: 0.3s;
+}
+.investing__info {
+    padding: 3rem 0;
+    height: 100%;
+}
+.investing__info-inner {
+    height: 100%;
+    padding: 4rem 3rem;
+    background-color: #252530;
+}
+.investing__info h3 {
+    margin-bottom: 3rem;
+}
+.investing__info p {
+    font-size: 1.6rem;
+}
+.open-account__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+.open-ccount__info {
+    text-align: left;
 }
