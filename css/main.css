@@ -1186,3 +1186,66 @@ input[type="range"]:focus::-ms-fill-upper {
 .open-ccount__info {
     text-align: left;
 }
+.footer__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+}
+.footer .logo {
+    max-width: 100%;
+    flex-basis: auto;
+    justify-content: flex-start;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    flex-basis: 25%;
+    text-align: left;
+}
+.footer__block h3 {
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.footer__block ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 15rem;
+}
+.footer__block li {
+    margin-bottom: 1.5rem;
+}
+.footer__block p {
+    font-size: 1.4rem;
+    color: #7a7a84;
+}
+.footer__block a {
+    font-size: 1.6rem;
+    color: #7a7a84;
+}
+.footer__block a:hover {
+    color: #c35ebb;
+}
+.footer__block--big {
+    flex-grow: 1;
+    padding: 0 3rem;
+}
+.copyright {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.contacts img {
+    margin-right: 1.5rem;
+}
+.contacts:hover > img {
+    transition: 0.3s;
+    transform: rotate(30deg);
+}
