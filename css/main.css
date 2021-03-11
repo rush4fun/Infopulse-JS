@@ -7,23 +7,6 @@
 /* --------------------------------------------------- FONTS */
 @font-face {
     font-family: "Gotham";
-    src: url("css/fonts/Gotham-XLight.woff2") format("woff2"), url("css/fonts/Gotham-XLight.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-MediumItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-MediumItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
     src: url("css/fonts/Gotham-Bold.woff2") format("woff2"), url("css/fonts/Gotham-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
@@ -37,15 +20,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-Light.woff2") format("woff2"), url("css/fonts/Gotham-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
 @font-face {
     font-family: "Gotham";
     src: url("css/fonts/Gotham-Black.woff2") format("woff2"), url("css/fonts/Gotham-Black.woff") format("woff");
@@ -56,41 +30,6 @@
 
 @font-face {
     font-family: "Gotham";
-    src: url("css/fonts/Gotham-Book.woff2") format("woff2"), url("css/fonts/Gotham-Book.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-BookItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-BookItalic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-XLightItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-XLightItalic.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-UltraItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-UltraItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
     src: url("css/fonts/Gotham-Bold.woff2") format("woff2"), url("css/fonts/Gotham-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
@@ -99,61 +38,9 @@
 
 @font-face {
     font-family: "Gotham";
-    src: url("css/fonts/Gotham-Thin.woff2") format("woff2"), url("css/fonts/Gotham-Thin.woff") format("woff");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-ThinItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-ThinItalic.woff") format("woff");
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
     src: url("css/fonts/Gotham-Medium.woff2") format("woff2"), url("css/fonts/Gotham-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-BoldItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-BoldItalic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-BookItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-BookItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-Medium.woff2") format("woff2"), url("css/fonts/Gotham-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Gotham";
-    src: url("css/fonts/Gotham-LightItalic.woff2") format("woff2"),
-        url("css/fonts/Gotham-LightItalic.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
     font-display: swap;
 }
 
@@ -268,6 +155,7 @@ p {
 }
 .btn {
     display: inline-block;
+    min-width: 25rem;
     padding: 1.5rem 8rem;
     background: var(--violet-btn);
     font-family: "Roboto", sans-serif;
@@ -279,7 +167,6 @@ p {
     background: transparent;
     outline: 0.3rem solid #7364f0;
     color: #fff;
-    transition: 0.3s;
 }
 .btn:active {
     color: var(--gray-text);
@@ -287,7 +174,6 @@ p {
 }
 a:hover {
     color: #c35ebb;
-    transition: 0.3s;
 }
 /* --------------------------------------------------- HEADER */
 .header {
@@ -319,7 +205,6 @@ a:hover {
 .header__top {
     display: flex;
     position: relative;
-    justify-content: space-between;
     flex-flow: row wrap;
 }
 .menu a,
@@ -335,15 +220,17 @@ a:hover {
 }
 .menu__wrapper,
 .login__wrapper {
-    max-width: 43%;
-    flex-basis: 43%;
+    flex: 0 0 43%;
 }
 .menu {
     display: flex;
     flex-flow: row wrap;
 }
+.menu *:last-child {
+    margin-right: 0;
+}
 .menu__item {
-    padding: 0 1.2rem;
+    margin-right: 2.5rem;
 }
 .menu__item a {
     position: relative;
@@ -369,8 +256,7 @@ a:hover {
     position: relative;
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
-    max-width: 14%;
-    flex-basis: 14%;
+    flex: 0 0 14%;
     background: -webkit-linear-gradient(180deg, #c35ebb 0%, #7364f0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -391,9 +277,12 @@ a:hover {
     flex-flow: row wrap;
     justify-content: flex-end;
 }
+.login__item:last-child {
+    margin-right: 0;
+}
 .login__item {
     display: flex;
-    padding: 0 1.5rem;
+    margin-right: 3rem;
 }
 .login__item a {
     display: flex;
@@ -482,13 +371,9 @@ a:hover {
 .header__main {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 0 50%;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    flex-basis: 50%;
-    margin: 0 auto;
-    text-align: center;
 }
 .header__main p {
     font-size: 1.8rem;
@@ -501,7 +386,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     padding-bottom: 5.5rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 .advantages__list:after {
     content: "";
@@ -515,8 +400,7 @@ a:hover {
 .advantages__item {
     display: flex;
     flex-flow: row wrap;
-    width: 23%;
-    flex-basis: 23%;
+    flex: 0 0 25%;
     align-items: center;
 }
 .advantages__item h4 {
@@ -525,16 +409,13 @@ a:hover {
 }
 .advantages__item h4:hover {
     color: #c35ebb;
-    transition: 0.3s;
 }
 .advantages__item p {
-    flex-basis: 100%;
     margin-top: 1.5rem;
     font-size: 1.2rem;
 }
 .advantages__item img {
-    height: 45px;
-    object-fit: cover;
+    object-fit: contain;
     margin-right: 2.5rem;
 }
 /* --------------------------------------------------- MAIN */
@@ -564,21 +445,22 @@ a:hover {
 .main__slider .slider__inner {
     display: flex;
     flex-flow: row wrap;
-    padding: 1rem 10rem 0 10rem;
+    justify-content: center;
+    padding: 1rem 10rem;
     background-color: #252530;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
 }
 .main__slider .slider__inner img {
-    width: 50%;
+    flex: 0 0 50%;
     object-fit: cover;
     background-color: #252530;
+    margin-bottom: -1rem;
 }
 .main__slider .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    flex-basis: 50%;
+    flex: 0 0 50%;
 }
 .main__slider h3 {
     margin-bottom: 2.5rem;
@@ -615,8 +497,7 @@ a:hover {
 }
 .indicator__block {
     position: relative;
-    width: 25%;
-    flex-basis: 25%;
+    flex: 0 0 25%;
     text-align: center;
 }
 .indicator__block:after {
@@ -643,7 +524,6 @@ a:hover {
 }
 .indicator__block:hover p {
     color: #7364f0;
-    transition: 0.3s;
 }
 .indicator__block span {
     font-size: 4.8rem;
@@ -662,17 +542,15 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 6rem 1rem;
+    padding: 6rem 0;
 }
 .steps {
     position: relative;
-    width: 30%;
-    flex-basis: 30%;
+    flex: 0 0 29%;
     transition: 0.3s;
 }
 .steps:hover {
     transform: translateY(-10%);
-    transition: 0.3s;
 }
 .steps:hover .step__block {
     border: 1px solid #c35ebb;
@@ -719,13 +597,13 @@ a:hover {
 .calculator__inner {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     padding: 10rem 1rem;
 }
 .calculator__main,
 .calculator__info {
     display: flex;
-    flex-basis: 50%;
-    width: 50%;
+    flex: 1 0 50%;
 }
 .calculator__main {
     display: flex;
@@ -872,7 +750,6 @@ input[type="range"]:focus::-ms-fill-upper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     padding: 1rem 8.5rem;
 }
 .calculator__info h2 {
@@ -897,8 +774,10 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .our-service__video {
     position: relative;
-    width: 57rem;
-    height: 32rem;
+    max-width: 57rem;
+}
+.our-service__video video {
+    max-width: 100%;
     background-color: #000;
 }
 .video:after {
@@ -920,17 +799,20 @@ input[type="range"]:focus::-ms-fill-upper {
     transform: scale(1.2) translateX(-40%);
     transition: 0.3s;
 }
+.how-it-works {
+    padding-bottom: 10rem;
+}
 .how-it-works__inner {
     display: flex;
     flex-flow: row wrap;
 }
 .how-it-works__info,
 .how-it-works__calculator {
-    width: 50%;
-    flex-basis: 50%;
+    flex: 1 0 50%;
 }
 .how-it-works__info {
     padding: 5rem 3rem 5rem 2rem;
+    margin-left: -2rem;
 }
 .how-it-works__info h2 {
     margin-bottom: 1rem;
@@ -961,6 +843,9 @@ input[type="range"]:focus::-ms-fill-upper {
 .how-it-works__heading {
     text-transform: uppercase;
     font-size: 1.8rem;
+}
+.crypto *:last-child {
+    margin-right: 0;
 }
 .crypto,
 .crypto__block {
@@ -1079,7 +964,6 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .feedback__video:hover {
     opacity: 1;
-    transition: 0.3s;
 }
 .feedback__slider .video::after {
     top: 20%;
@@ -1099,14 +983,13 @@ input[type="range"]:focus::-ms-fill-upper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 6rem 1rem;
+    padding: 6rem 0;
 }
 .investing__block {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    flex-basis: 45%;
-    width: 45%;
+    flex: 0 0 45%;
     margin-bottom: 5rem;
 }
 .investing__media,
@@ -1180,17 +1063,17 @@ input[type="range"]:focus::-ms-fill-upper {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
     padding: 0 5rem;
 }
 .open-ccount__info {
     text-align: left;
+    flex: 1 0 auto;
 }
 .footer__inner {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 4rem 1rem;
+    padding: 4rem 0;
 }
 .footer .logo {
     max-width: 100%;
@@ -1202,8 +1085,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .footer__block {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    flex-basis: 25%;
+    flex: 0 0 25%;
     text-align: left;
 }
 .footer__block h3 {
